@@ -1,4 +1,7 @@
  
+.redline{
+    border-color: red;
+ }
 /* mainhead/slogan/bighello */
 h1{
     font-family: 'Helvetica';
@@ -77,7 +80,7 @@ header{
     
     display: inline-block;
     position: fixed;
-    height: 116px;
+    height: 120x;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -131,37 +134,44 @@ header{
             position: absolute;
             top: 0px;                 
             }
- 
-#LANDING {
+
+
+.parentcontainer{
     display: flex;
-    max-width: 100%;
-    position: relative;
-    gap: 130px;
-    }
+    flex-direction: column;
+}
+
+
    
     #LANDleft {
     float: left;
+    width: 1000px;
     margin-left: 180px;
-    margin-top: 100px;
+    margin-top: 300px;
+    height:848px;
+    align-items:center;
+    justify-content: center;
     }
-   
-    #LANDright {
-    float: right;
-    margin-right: 180px;
-    margin-top: 75px;
-    }
-      .slogan{
+
+    #LANDleft p{
         font-family: 'Helvetica';
         font-style: normal;
         font-weight: 300;
         font-size: 40px;
         line-height: 175%;
         color: #303030;
-        width: 800px;
+        width: 75%;
         height: 140px;
-        left: 110px;
-        top: 288px;
+        
     }
+    #LANDright {
+    width: 25%;
+    float: right;
+    height:848px;
+    margin-top: 150px;
+    /* align-items: flex-start; */
+    }
+ 
 
     /* Copied from https://codepen.io/alvarotrigo/pen/popvzVw */
 mark {
@@ -199,32 +209,30 @@ body{
     }
 
 
-/* CASA */
-#CASA {
-    display: flex;
-    max-width: 100%;
-    height: 500px;
-  }
- 
+/* CASA */ 
   #CASAleft {    
     background-color: #FAF9FD;
     width: 50%;
+    height:504px;
     float: left;
-    align-items: center;    
+    align-items: center; 
+    justify-content: center;
+    
   }
     #CASAleft h3{
-        margin-left: 144px;
+        padding-left: 72px;
     }
+
     #CASAleft h1{
-        margin-left: 144px;
+        padding-left: 72px;
         color: #7251B5;
     }
     #CASAleft p{
-        width: 420px;
-        margin-left: 144px;
+        width: 64%;
+        padding-left: 72px;
     }
     #CASAleft button{
-        margin-left: 144px;
+        margin-left: 72px;
         border: 3px solid #7251B5;
     }
     #CASAleft h2{
@@ -240,48 +248,56 @@ body{
 #CASAright {
     background-color: #ECEAF6;
     width: 50%;
+    height: 504px;
     float: right;
     align-items: center;
+    justify-content: center;
   }
- #CASA img{
-    margin-left: 144px;
- }
+  #CASA img{
+    width: 90%;
+  }
+
  
 
   /* NSA */
   #NSA {
-    display: flex;
-    max-width: 100%;
-    height: 500px;
+
+    height: 504px;
   }
   #NSA img{
-    margin-left: 144px;
+    height: 90%;
  }
  #NSAleft {
+    height: 504px;
     background-color: #CFDFEF;
     width: 50%;
     float: left;
+    align-items: center;
+    justify-content: center;
   }
   #NSAright {
+    height: 504px;
     background-color: #F5F9FC;
     width: 50%;
     float: right;
-    align-items: center;    
+    align-items: center; 
+    justify-content: center;   
 }
     #NSAright h3{
-        margin-left: 144px;
+        padding-left: 144px;
      }
      #NSAright h1{
-        margin-left: 144px;
+        padding-left: 144px;
         color: #1E7BB7;
      }
      #NSAright p{
         width: 420px;
-        margin-left: 144px;
+        padding-left: 144px;
      }
      #NSAright button{
         margin-left: 144px;
         border-color: #1E7BB7;
+        color: #1E7BB7;
      }
      #NSAright button:hover{
         transition-duration: 0.2s;
@@ -295,41 +311,29 @@ body{
      }
  
 /* ONLYPETS */
-#ONLYPETS {
-    display: flex;
-    max-width: 100%;
-    height: 500px;
-  }
  
   #OPleft {
     background-color: #FEFAF6;
     width: 50%;
+    height:504px;
     float: left;
+    align-items: center; 
+    justify-content: center;
   }
- 
-  #OPright {
-    background-color: #F8E2C8;
-    width: 50%;
-    float: right;
-    align-items: center;
-}
- #ONLYPETS img{
-    margin-left: 288px;
-  
- }
+
  #OPleft h3{
-    margin-left: 144px;
+    padding-left: 72px;
  }
  #OPleft h1{
-    margin-left: 144px;
+    padding-left: 72px;
     color: #F88A39;
  }
  #OPleft p{
     width: 420px;
-    margin-left: 144px;
+    padding-left: 72px;
  }
  #OPleft button{
-    margin-left: 144px;
+    margin-left: 72px;
     border-color:#F88A39;
     
  }
@@ -343,7 +347,21 @@ body{
  #OPleft button:hover h2{
     color: #ffffff;
  }
-
+ 
+  #OPright {
+    background-color: #F8E2C8;
+    width: 50%;
+    height: 504px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+ #OPright img{
+   height: 90%;
+   align-items: center;
+justify-content: center;
+  
+ }
  
 
 /* CONTACT */
