@@ -1,0 +1,500 @@
+ 
+/* mainhead/slogan/bighello */
+h1{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+/* smallhead/buttons/jobtitle */
+h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 175%;
+    /* identical to box height, or 44px */
+    text-transform: uppercase;
+}
+/* minihead */
+h3{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #383C4A;
+}
+/* special hi */
+h4{
+    font-family: 'Qwigley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 90px;
+}
+h5{
+font-family: Helvetica;
+}
+h6{
+    font-family: Helvetica;
+}
+/* content text */
+p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 175%;
+    color: #303030;
+}
+ 
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+   
+    }
+/* spacer seperates header from body content */
+.spacer
+{
+    width: 100%;
+    height: 72px;
+}
+ 
+ 
+/* TOP NAVIGATION */
+#floatingMenu{
+    clear: both;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    }
+header{
+    
+    display: inline-block;
+    position: fixed;
+    height: 116px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    max-width:100%;
+    z-index: 1;
+        }
+ 
+    /* Top nav list items: */
+    nav {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        width: 98%;
+        height: 116px;
+        background-color: #fff;
+        font-family: 'Helvetica';
+        font-style: light;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 175%;
+        }
+        .navMargin{
+            margin-top: 15px;
+            margin-left:15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        .topnavList {
+                width: auto;
+                text-align: center;
+                float: right;
+                right: 0;
+                color: #303030;
+               
+            }
+            a {
+                text-decoration: none;
+                color:#303030;
+             }
+             a:visited{
+                color:#303030;
+             }
+    .logo {
+        margin-left: 180px;
+        margin-right: auto;
+            display: inline-block;
+            height: 116px;
+            background-color: #fff;
+            position: absolute;
+            top: 0px;                 
+            }
+ 
+#LANDING {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    gap: 130px;
+    }
+   
+    #LANDleft {
+    float: left;
+    margin-left: 180px;
+    margin-top: 100px;
+    }
+   
+    #LANDright {
+    float: right;
+    margin-right: 180px;
+    margin-top: 75px;
+    }
+      .slogan{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 175%;
+        color: #303030;
+        width: 800px;
+        height: 140px;
+        left: 110px;
+        top: 288px;
+    }
+
+    /* Copied from https://codepen.io/alvarotrigo/pen/popvzVw */
+mark {
+    -webkit-animation: 1s highlight 1s 1 normal forwards;
+            animation: 1s highlight 1s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #FDECE9 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+@-webkit-keyframes highlight {
+    to {
+    background-position: 0 0;
+    }
+}
+@keyframes highlight {
+    to {
+    background-position: 0 0;
+    }
+}
+
+ 
+ 
+ 
+body{
+    width: 100%;     
+}
+ 
+ 
+ 
+   
+/*MAIN CONTENT*/
+    .content {
+    width:100%;
+    }
+
+
+/* CASA */
+#CASA {
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+  }
+ 
+  #CASAleft {    
+    background-color: #FAF9FD;
+    width: 50%;
+    float: left;
+    align-items: center;    
+  }
+    #CASAleft h3{
+        margin-left: 144px;
+    }
+    #CASAleft h1{
+        margin-left: 144px;
+        color: #7251B5;
+    }
+    #CASAleft p{
+        width: 420px;
+        margin-left: 144px;
+    }
+    #CASAleft button{
+        margin-left: 144px;
+        border: 3px solid #7251B5;
+    }
+    #CASAleft h2{
+        color: #7251B5;
+    }
+    #CASAleft button:hover{
+        transition-duration: 0.2s;
+        background-color:#7251B5;
+    }
+    #CASAleft button:hover h2{
+        color: #ffffff;
+    }
+#CASAright {
+    background-color: #ECEAF6;
+    width: 50%;
+    float: right;
+    align-items: center;
+  }
+ #CASA img{
+    margin-left: 144px;
+ }
+ 
+
+  /* NSA */
+  #NSA {
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+  }
+  #NSA img{
+    margin-left: 144px;
+ }
+ #NSAleft {
+    background-color: #CFDFEF;
+    width: 50%;
+    float: left;
+  }
+  #NSAright {
+    background-color: #F5F9FC;
+    width: 50%;
+    float: right;
+    align-items: center;    
+}
+    #NSAright h3{
+        margin-left: 144px;
+     }
+     #NSAright h1{
+        margin-left: 144px;
+        color: #1E7BB7;
+     }
+     #NSAright p{
+        width: 420px;
+        margin-left: 144px;
+     }
+     #NSAright button{
+        margin-left: 144px;
+        border-color: #1E7BB7;
+     }
+     #NSAright button:hover{
+        transition-duration: 0.2s;
+        background-color:#1E7BB7;
+     }
+     #NSAright button:hover h2{
+        color: #ffffff;
+     }
+     #NSA h2{
+        color: #1E7BB7;
+     }
+ 
+/* ONLYPETS */
+#ONLYPETS {
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+  }
+ 
+  #OPleft {
+    background-color: #FEFAF6;
+    width: 50%;
+    float: left;
+  }
+ 
+  #OPright {
+    background-color: #F8E2C8;
+    width: 50%;
+    float: right;
+    align-items: center;
+}
+ #ONLYPETS img{
+    margin-left: 288px;
+  
+ }
+ #OPleft h3{
+    margin-left: 144px;
+ }
+ #OPleft h1{
+    margin-left: 144px;
+    color: #F88A39;
+ }
+ #OPleft p{
+    width: 420px;
+    margin-left: 144px;
+ }
+ #OPleft button{
+    margin-left: 144px;
+    border-color:#F88A39;
+    
+ }
+ #ONLYPETS h2{
+    color: #F88A39;
+ }
+ #OPleft button:hover{
+    transition-duration: 0.2s;
+    background-color:#F88A39;
+ }
+ #OPleft button:hover h2{
+    color: #ffffff;
+ }
+
+ 
+
+/* CONTACT */
+    #CONTACT {
+        display: flex;
+        max-width: 100%;
+        height: 500px;
+      }
+     
+      #chatleft {
+        width: 50%;
+        float: left;
+      }
+     
+      #chatright {
+        list-style: none;
+        width: 50%;
+        float: right;}
+ #chatright img{
+    margin-left: 72px;
+    margin-top: 20px;
+  
+ }
+ #chatleft h3{
+    margin-left: 144px;
+ }
+ #chatleft h1{
+    margin-left: 144px;
+    color: #FF6C99;
+ }
+ #chatleft p{
+    width: 420px;
+    margin-left: 144px;
+ }
+ #chatleft button{
+    margin-left: 144px;
+    border-color: #FF6C99;
+ }
+ #CONTACT h2{
+    color: #FF6C99;
+ }
+ #chatleft button:hover{
+    transition-duration: 0.2s;
+    background-color:#FF6C99;
+ }
+ #chatleft button:hover h2{
+    color: #ffffff;
+ }
+ 
+/* BUTTONS */
+button{
+    box-sizing: border-box;
+    align-items: center;
+    width: 300px;
+    height: 84px;
+    background: #FFFFFF;
+    border: 3px solid #000;
+}  
+   
+ 
+ 
+ 
+/*FOOTER*/
+footer{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 116px;
+    width: 100%;
+    margin-left: 30%;  
+    text-align: right;
+    float: right;
+    height: 116px;
+    background: #FDECE9;
+    }
+
+
+    
+
+.footerList {
+    margin-top: 15px;
+    margin-left:15px;
+    margin-right: 72px;
+    margin-bottom: 15px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 175%;
+    }
+ 
+ 
+ 
+/* "ABOUT PAGE"*/
+.bigHello{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.jobTitle{
+    font-family: 'Helvetica';
+    font-style: normal;
+}
+.careerSlogan{
+
+    left: 110px;
+    margin-top: 72px;
+    width: 500px;
+    height: 55px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #000000;
+}
+#Careerleft {
+    float: left;
+    margin-left: 180px;
+    margin-top: 144px;
+    }
+    #jobtitleh2{
+        font-weight: 500;
+    }
+#Careerright {
+    float: right;
+    margin-right: 288px;
+    margin-top: 144px;
+    }
+ span{
+    color: #FF6C99;
+ }
+ #aboutP1{
+    width: 800px;
+  
+   }
+ .aboutP2{
+    width: 800px;
+ }
+ .aboutP3{
+    width: 900px;
+ }
+ .pspacer
+{
+    width: 100%;
+    height: 20px;
+}
+
