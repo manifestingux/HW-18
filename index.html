@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Anna Riedle</title>
             <link href="style.css" rel="stylesheet" type="text/css">
           </head>
      
     <body>
 <!-- HEADER -->
- <section class="redline">       
-    <header id="floatingMenu">
-            
-            <nav class="inline-block">
-                <ul class="topnavList">
-                <li class="inline-block navMargin"><a href="index.html">Work</a></li>
-                 <li class="inline-block navMargin"><a href="about.html"> About </a></li>
-                 <li class="inline-block navMargin"><a href="https://www.linkedin.com/in/manifestingux/" target="blank">LinkedIn</a></li>
-                 <li class="inline-block navMargin"><a href="https://drive.google.com/file/d/1opaDoS01KjANEHUlz5idYP9Qv4E7E9ve/view?usp=share_link" target="blank">Resume</a></li>
-                 </ul>
+ <section>       
+    <header id="floatingMenu">            
+        <nav class="inline-block">
+            <div class="inline-block logo"> 
+                <img src="images/logo.png">
+            </div>
+            <ul class="topnavList">
+            <li class="inline-block navMargin"><a href="index.html">Work</a></li>
+                <li class="inline-block navMargin"><a href="about.html"> About </a></li>
+                <li class="inline-block navMargin"><a href="https://www.linkedin.com/in/manifestingux/" target="blank">LinkedIn</a></li>
+                <li class="inline-block navMargin"><a href="https://drive.google.com/file/d/1opaDoS01KjANEHUlz5idYP9Qv4E7E9ve/view?usp=share_link" target="blank">Resume</a></li>
+                </ul>
                  
-                 <div class="inline-block logo"> 
-                    <img src="images/logo.png">
-                </div>
+               
              </nav>
         </header>
 </section>
@@ -34,39 +37,33 @@
 
 <!-- LANDING -->
 <section>
-  <div id="LANDING parentcontainer">
-<div  id="LANDleft">
-    <p>Bringing the <mark>user's</mark> thoughts, feelings, and beliefs to life through meaningful <mark>design.</mark></p> 
-</div>
-<div class="spacer">
-    &nbsp;
-</div>
-<div id="LANDright">
-    <img src="images/avatar.png">
-</div>
+  <div id="LANDING" class="herogrid">
+    <div  id="LANDleft">
+        <p>Bringing the <mark>user's</mark> thoughts, feelings, and beliefs to life through meaningful <mark>design.</mark></p> 
+    </div>
+
+    <div id="LANDright">
+        <img src="images/avatar.png" alt="Avatar of Anna">
+    </div>
 </div>
 </section>
 
 
-<!-- <div class="spacer">
-    &nbsp;
-</div> -->
+<!--CASE STUDIES/MY WORK-->
 
-
-<!--CASE STUDIES/"Work/Home"-->
-
-
-<section class="content parentcontainer">
+<div id="gridcontainer">
+<section>
+  
 <!--CASA-->
-<div id="CASA" class="inline-block">
-    <div id="CASAleft">
+<div id="CASA" class="gridcontainer">
+    <div id="CASAleft" class="griditem">
         <h3>UX Case Study | UI Design sprint</h3>
         <h1 >Nonprofit redesign</h1>
         <p >Evaluating the usability and accessibility of my local domestic abuse shelter's website, and applying psychological concepts to a responsive redesign.</p>
         <button ><h2>VIEW CASE STUDY</h2></button>
     </div>
-    <div id="CASAright">
-        <img src="images/casa mockup.png" width="700px">
+    <div id="CASAright" class="griditem">
+        <img class="griditem" src="images/casa mockup.png" alt="High-fidelity mockup of CASA">
     </div>
 </div>
 </section>
@@ -76,13 +73,13 @@
 </div>
 
 
-<section class=" parentcontainer">
+<section>
 <!--NSA-->
-<div id="NSA parentcontainer" >
-    <div id="NSAleft">
-        <img src="images/nsa mockup.png" width="730px">
+<div id="NSA" class="gridcontainer">
+    <div id="NSAleft" class="griditem">
+        <img src="images/nsa mockup.png" alt="High-fidelity mockup of NSA" width="730px">
     </div>
-    <div id="NSAright">   
+    <div id="NSAright" class="griditem">   
         <h3>UX Case Study | UI Design sprint</h3>
         <h1>Responsive Navigation</h1>
         <p>Analyzing the usability and accessibility of a government agency's website and redesigning a responsive solution.</p>
@@ -94,17 +91,17 @@
 <div class="spacer">
     &nbsp;
 </div>
-<section class="parentcontainer">
+<section>
 <!--ONLYPETS-->
-<div id="ONLYPETS">
-    <div id="OPleft">
+<div id="ONLYPETS" class="gridcontainer">
+    <div id="OPleft" class="griditem">
         <h3>UX Case Study | UI Design sprint</h3>
         <h1>Onlypets</h1>
         <p>Reinventing social media and creating a space for pet lovers to grow a community and share a love for animals.</p>
         <button><h2>COMING SOON</h2></button>
     </div>
-    <div id="OPright">
-        <img src="images/onlypets mockup.png" width="420px">
+    <div id="OPright" class="griditem">
+        <img src="images/onlypets mockup.png" alt="High-fidelity mockup of OnlyPets" width="420px">
     </div>
 </div>
 </section>
@@ -116,16 +113,13 @@
     &nbsp;
 </div>
 
-<section class=" parentcontainer">
- <!-- LETS CHAT -->
+<section>
+ <!--CONTACT-->
     <div id="CONTACT">
        <div id="chatleft">
         <h1><img src="images/chat.png">LET'S CHAT!</h1>
        <p>I'd love to connect with you and exchange information about our work, where we've been, and what inspires us.</p>
-       <button><a href="https://drive.google.com/file/d/1opaDoS01KjANEHUlz5idYP9Qv4E7E9ve/view?usp=share_link" target="blank"><h2>RESUME</h2></a></button>
-       </div>
-
-       <div>
+ 
         <ul  id="chatright"> 
            <li><a href = "mailto: manifestingux@gmail.com"><img src="images/email.png"></a></li>
            <li><a href="https://www.linkedin.com/in/manifestingux/" target="blank"><img src="images/linkedin.png"></a></li>
@@ -134,13 +128,13 @@
        </div>
 
    </div>
+
    </section>
-   
+</div>
    
   
 <!-- FOOTER -->
 
-</section>
 
 <div class="spacer">
     &nbsp;

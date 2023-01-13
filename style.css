@@ -1,7 +1,3 @@
- 
-.redline{
-    border-color: red;
- }
 /* mainhead/slogan/bighello */
 h1{
     font-family: 'Helvetica';
@@ -91,10 +87,8 @@ header{
  
     /* Top nav list items: */
     nav {
-        position: relative;
-        left: 0px;
-        right: 0px;
-        top: 0px;
+        display: flex;
+        justify-content: space-between;
         width: 98%;
         height: 116px;
         background-color: #fff;
@@ -134,25 +128,20 @@ header{
             position: absolute;
             top: 0px;                 
             }
-
-
-.parentcontainer{
-    display: flex;
-    flex-direction: column;
+/* HERO SECTION */
+.herogrid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
-
-
-   
     #LANDleft {
-    float: left;
-    width: 1000px;
-    margin-left: 180px;
-    margin-top: 300px;
-    height:848px;
-    align-items:center;
-    justify-content: center;
+        display: flex;
+        margin-left: 144px;
+        width: 100%;
+        margin-top: 300px;
+        margin-bottom: 300px; 
+        margin-right: 144px;  
     }
-
     #LANDleft p{
         font-family: 'Helvetica';
         font-style: normal;
@@ -162,17 +151,23 @@ header{
         color: #303030;
         width: 75%;
         height: 140px;
-        
     }
     #LANDright {
-    width: 25%;
-    float: right;
-    height:848px;
-    margin-top: 150px;
-    /* align-items: flex-start; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+    }
+    #LANDright img{
+        padding-right: 144px;
+        padding-left: 72px;
+        padding-top:20px;
+        padding-bottom: 20px;
+        max-width: 100%;
+        height: auto;
     }
  
-
+/* ANIMATED HIGHLIGHT */
     /* Copied from https://codepen.io/alvarotrigo/pen/popvzVw */
 mark {
     -webkit-animation: 1s highlight 1s 1 normal forwards;
@@ -192,69 +187,68 @@ mark {
     background-position: 0 0;
     }
 }
-
- 
- 
- 
-body{
-    width: 100%;     
-}
  
  
  
    
-/*MAIN CONTENT*/
-    .content {
-    width:100%;
+/*CASE STUDIES/MY WORK*/
+   .gridcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    } 
+    .griditem{
+     display: grid;
+     padding-top: 20px;
+     padding-bottom: 20px
     }
 
-
 /* CASA */ 
-  #CASAleft {    
+  #CASAleft {
+    display: grid;
     background-color: #FAF9FD;
-    width: 50%;
-    height:504px;
-    float: left;
-    align-items: center; 
-    justify-content: center;
     
   }
     #CASAleft h3{
-        padding-left: 72px;
+        margin-left: 144px;
     }
-
-    #CASAleft h1{
-        padding-left: 72px;
-        color: #7251B5;
-    }
-    #CASAleft p{
-        width: 64%;
-        padding-left: 72px;
-    }
-    #CASAleft button{
-        margin-left: 72px;
-        border: 3px solid #7251B5;
-    }
-    #CASAleft h2{
-        color: #7251B5;
-    }
-    #CASAleft button:hover{
-        transition-duration: 0.2s;
-        background-color:#7251B5;
-    }
-    #CASAleft button:hover h2{
-        color: #ffffff;
-    }
+        #CASAleft h1{
+            margin-left: 144px;
+            color: #7251B5;
+        }
+        #CASAleft h2{
+            color: #7251B5;
+        }
+        #CASAleft p{
+            margin-left: 144px;
+            width: 50%;
+        }
+        #CASAleft button{
+            margin-left: 144px;
+            border: 3px solid #7251B5;
+        }       
+            #CASAleft button:hover{
+                transition-duration: 0.2s;
+                background-color:#7251B5;
+            }
+            #CASAleft button:hover h2{
+                color: #ffffff;
+            }
 #CASAright {
+    display: flex;
     background-color: #ECEAF6;
-    width: 50%;
-    height: 504px;
-    float: right;
     align-items: center;
     justify-content: center;
+    
   }
   #CASA img{
-    width: 90%;
+   padding-right: 144px;
+   padding-left: 72px;
+   padding-top:20px;
+   padding-bottom: 20px;
+   max-width: 100%;
+   height: auto;
   }
 
  
@@ -265,34 +259,33 @@ body{
     height: 504px;
   }
   #NSA img{
-    height: 90%;
+    padding-right: 144px;
+    padding-left: 72px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
  }
  #NSAleft {
-    height: 504px;
+    display: flex;
     background-color: #CFDFEF;
-    width: 50%;
-    float: left;
     align-items: center;
     justify-content: center;
   }
   #NSAright {
-    height: 504px;
+    display: grid;
     background-color: #F5F9FC;
-    width: 50%;
-    float: right;
-    align-items: center; 
-    justify-content: center;   
 }
     #NSAright h3{
-        padding-left: 144px;
+        margin-left: 144px;
      }
      #NSAright h1{
-        padding-left: 144px;
+        margin-left: 144px;
         color: #1E7BB7;
      }
      #NSAright p{
-        width: 420px;
-        padding-left: 144px;
+        width: 50%;
+        margin-left: 144px;
      }
      #NSAright button{
         margin-left: 144px;
@@ -313,27 +306,23 @@ body{
 /* ONLYPETS */
  
   #OPleft {
+    display: grid;
     background-color: #FEFAF6;
-    width: 50%;
-    height:504px;
-    float: left;
-    align-items: center; 
-    justify-content: center;
   }
 
  #OPleft h3{
-    padding-left: 72px;
+    margin-left: 144px;
  }
  #OPleft h1{
-    padding-left: 72px;
+    margin-left: 144px;
     color: #F88A39;
  }
  #OPleft p{
-    width: 420px;
-    padding-left: 72px;
+    width: 50%;
+    margin-left: 144px;
  }
  #OPleft button{
-    margin-left: 72px;
+    margin-left: 144px;
     border-color:#F88A39;
     
  }
@@ -349,33 +338,33 @@ body{
  }
  
   #OPright {
+    display: flex;
     background-color: #F8E2C8;
-    width: 50%;
-    height: 504px;
-    float: right;
     align-items: center;
     justify-content: center;
 }
  #OPright img{
-   height: 90%;
-   align-items: center;
-justify-content: center;
-  
+    padding-right: 144px;
+    padding-left: 144px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
  }
  
 
 /* CONTACT */
+/* contact needs to be centered with the 3 links aligned horizontally and underneath the text */
     #CONTACT {
         display: flex;
         max-width: 100%;
         height: 500px;
-      }
-     
+        list-style: none;
+      }     
       #chatleft {
         width: 50%;
         float: left;
-      }
-     
+      }     
       #chatright {
         list-style: none;
         width: 50%;
@@ -383,8 +372,7 @@ justify-content: center;
  #chatright img{
     margin-left: 72px;
     margin-top: 20px;
-  
- }
+   }
  #chatleft h3{
     margin-left: 144px;
  }
@@ -393,8 +381,9 @@ justify-content: center;
     color: #FF6C99;
  }
  #chatleft p{
-    width: 420px;
+    /* width: 420px; */
     margin-left: 144px;
+    text-align: center;
  }
  #chatleft button{
     margin-left: 144px;
@@ -411,6 +400,8 @@ justify-content: center;
     color: #ffffff;
  }
  
+
+
 /* BUTTONS */
 button{
     box-sizing: border-box;
@@ -418,7 +409,7 @@ button{
     width: 300px;
     height: 84px;
     background: #FFFFFF;
-    border: 3px solid #000;
+    border: 3px solid;
 }  
    
  
