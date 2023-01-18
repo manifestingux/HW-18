@@ -1,68 +1,39 @@
+section{
+    outline: 2px solid red;
+    margin: auto;
+}
 /* mainhead/slogan/bighello */
 h1{
     font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
-    line-height: 55px;
     text-transform: uppercase;
 }
 /* smallhead/buttons/jobtitle */
 h2{
     font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 700;
     font-size: 25px;
-    line-height: 175%;
-    /* identical to box height, or 44px */
     text-transform: uppercase;
 }
 /* minihead */
 h3{
     font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
-    line-height: 19px;
     text-transform: uppercase;
     color: #383C4A;
 }
-/* special hi */
-h4{
-    font-family: 'Qwigley';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 90px;
-}
-h5{
-font-family: Helvetica;
-}
-h6{
-    font-family: Helvetica;
-}
-/* content text */
 p{
     font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 300;
     font-size: 20px;
-    line-height: 175%;
     color: #303030;
 }
  
 .inline-block {
     display: inline-block;
-    vertical-align: top;
-   
     }
-/* spacer seperates header from body content */
-.spacer
-{
-    width: 100%;
-    height: 72px;
-}
- 
+
+ body{
+    margin-top: 121px;
+ }
  
 /* TOP NAVIGATION */
 #floatingMenu{
@@ -72,8 +43,7 @@ p{
     background-color: #ffffff;
     top: 0;
     }
-header{
-    
+header{    
     display: inline-block;
     position: fixed;
     height: 120x;
@@ -88,21 +58,22 @@ header{
     /* Top nav list items: */
     nav {
         display: flex;
+        position: fixed;
+        top: 0;
         justify-content: space-between;
-        width: 98%;
-        height: 116px;
+        /* margin:15px; */
+        width: 100%;
+        height: 120px;
         background-color: #fff;
         font-family: 'Helvetica';
-        font-style: light;
-        font-weight: 500;
+        /* font-style: light;
+        font-weight: 500; */
         font-size: 25px;
-        line-height: 175%;
+        /* line-height: 175%; */
+        
         }
         .navMargin{
-            margin-top: 15px;
-            margin-left:15px;
-            margin-right: 15px;
-            margin-bottom: 15px;
+            margin:15px;
         }
         .topnavList {
                 width: auto;
@@ -110,7 +81,7 @@ header{
                 float: right;
                 right: 0;
                 color: #303030;
-               
+                margin-right: 144px;
             }
             a {
                 text-decoration: none;
@@ -123,24 +94,20 @@ header{
         margin-left: 180px;
         margin-right: auto;
             display: inline-block;
-            height: 116px;
+            height: 120px;
             background-color: #fff;
             position: absolute;
             top: 0px;                 
             }
 /* HERO SECTION */
 .herogrid{
-    margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
 }
     #LANDleft {
-        display: flex;
-        margin-left: 144px;
-        width: 100%;
-        margin-top: 300px;
-        margin-bottom: 300px; 
-        margin-right: 144px;  
+        display: grid;
+        align-items: center;
+        justify-content: center;  
     }
     #LANDleft p{
         font-family: 'Helvetica';
@@ -148,22 +115,27 @@ header{
         font-weight: 300;
         font-size: 40px;
         line-height: 175%;
+        margin-left: 144px;
         color: #303030;
         width: 75%;
         height: 140px;
     }
     #LANDright {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-   
+    display: grid;
+    margin-left: 10px; 
+       padding-top: 30px;
+        padding-bottom: 30px;
+        align-items:center;
+        justify-content: center;
+        /* max-width: 80%;
+        height: auto;   */
     }
     #LANDright img{
-        padding-right: 144px;
-        padding-left: 72px;
-        padding-top:20px;
-        padding-bottom: 20px;
-        max-width: 100%;
+        /* padding-top: 30px;
+        padding-bottom: 30px;
+        align-items:center;
+        justify-content: center; */
+        max-width: 80%;
         height: auto;
     }
  
@@ -188,221 +160,7 @@ mark {
     }
 }
  
- 
- 
-   
-/*CASE STUDIES/MY WORK*/
-   .gridcontainer{
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-    } 
-    .griditem{
-     display: grid;
-     padding-top: 20px;
-     padding-bottom: 20px
-    }
-
-/* CASA */ 
-  #CASAleft {
-    display: grid;
-    background-color: #FAF9FD;
-    
-  }
-    #CASAleft h3{
-        margin-left: 144px;
-    }
-        #CASAleft h1{
-            margin-left: 144px;
-            color: #7251B5;
-        }
-        #CASAleft h2{
-            color: #7251B5;
-        }
-        #CASAleft p{
-            margin-left: 144px;
-            width: 50%;
-        }
-        #CASAleft button{
-            margin-left: 144px;
-            border: 3px solid #7251B5;
-        }       
-            #CASAleft button:hover{
-                transition-duration: 0.2s;
-                background-color:#7251B5;
-            }
-            #CASAleft button:hover h2{
-                color: #ffffff;
-            }
-#CASAright {
-    display: flex;
-    background-color: #ECEAF6;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  #CASA img{
-   padding-right: 144px;
-   padding-left: 72px;
-   padding-top:20px;
-   padding-bottom: 20px;
-   max-width: 100%;
-   height: auto;
-  }
-
- 
-
-  /* NSA */
-  #NSA {
-
-    height: 504px;
-  }
-  #NSA img{
-    padding-right: 144px;
-    padding-left: 72px;
-    padding-top:20px;
-    padding-bottom: 20px;
-    max-width: 100%;
-    height: auto;
- }
- #NSAleft {
-    display: flex;
-    background-color: #CFDFEF;
-    align-items: center;
-    justify-content: center;
-  }
-  #NSAright {
-    display: grid;
-    background-color: #F5F9FC;
-}
-    #NSAright h3{
-        margin-left: 144px;
-     }
-     #NSAright h1{
-        margin-left: 144px;
-        color: #1E7BB7;
-     }
-     #NSAright p{
-        width: 50%;
-        margin-left: 144px;
-     }
-     #NSAright button{
-        margin-left: 144px;
-        border-color: #1E7BB7;
-        color: #1E7BB7;
-     }
-     #NSAright button:hover{
-        transition-duration: 0.2s;
-        background-color:#1E7BB7;
-     }
-     #NSAright button:hover h2{
-        color: #ffffff;
-     }
-     #NSA h2{
-        color: #1E7BB7;
-     }
- 
-/* ONLYPETS */
- 
-  #OPleft {
-    display: grid;
-    background-color: #FEFAF6;
-  }
-
- #OPleft h3{
-    margin-left: 144px;
- }
- #OPleft h1{
-    margin-left: 144px;
-    color: #F88A39;
- }
- #OPleft p{
-    width: 50%;
-    margin-left: 144px;
- }
- #OPleft button{
-    margin-left: 144px;
-    border-color:#F88A39;
-    
- }
- #ONLYPETS h2{
-    color: #F88A39;
- }
- #OPleft button:hover{
-    transition-duration: 0.2s;
-    background-color:#F88A39;
- }
- #OPleft button:hover h2{
-    color: #ffffff;
- }
- 
-  #OPright {
-    display: flex;
-    background-color: #F8E2C8;
-    align-items: center;
-    justify-content: center;
-}
- #OPright img{
-    padding-right: 144px;
-    padding-left: 144px;
-    padding-top:20px;
-    padding-bottom: 20px;
-    max-width: 100%;
-    height: auto;
- }
- 
-
-/* CONTACT */
-/* contact needs to be centered with the 3 links aligned horizontally and underneath the text */
-    #CONTACT {
-        display: flex;
-        max-width: 100%;
-        height: 500px;
-        list-style: none;
-      }     
-      #chatleft {
-        width: 50%;
-        float: left;
-      }     
-      #chatright {
-        list-style: none;
-        width: 50%;
-        float: right;}
- #chatright img{
-    margin-left: 72px;
-    margin-top: 20px;
-   }
- #chatleft h3{
-    margin-left: 144px;
- }
- #chatleft h1{
-    margin-left: 144px;
-    color: #FF6C99;
- }
- #chatleft p{
-    /* width: 420px; */
-    margin-left: 144px;
-    text-align: center;
- }
- #chatleft button{
-    margin-left: 144px;
-    border-color: #FF6C99;
- }
- #CONTACT h2{
-    color: #FF6C99;
- }
- #chatleft button:hover{
-    transition-duration: 0.2s;
-    background-color:#FF6C99;
- }
- #chatleft button:hover h2{
-    color: #ffffff;
- }
- 
-
-
-/* BUTTONS */
+ /* BUTTONSBUTTONSBUTTONSBUTTONSBUTTONSBUTTONSBUTTONS */
 button{
     box-sizing: border-box;
     align-items: center;
@@ -410,12 +168,209 @@ button{
     height: 84px;
     background: #FFFFFF;
     border: 3px solid;
-}  
+}
+ 
+   
+/* CASACASACASACASACASACASACASACASACASACASACASACASA */
+   
+
+.casagridcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
+        grid-template-areas: "casaL casaR";    
+    } 
+    #casaL{
+        grid-area: casaL;
+        background-color: #FAF9FD;
+    }
+    #casaR{
+        grid-area: casaR;
+        background-color: #ECEAF6;
+    }
+    .casagridL{
+     display: grid;
+    }
+    .casagridL h3{
+        margin-left: 144px;
+    }
+    .casagridL h1{
+            margin-left: 144px;
+            color: #7251B5;
+        }
+    .casagridL h2{
+        color: #7251B5;
+    }
+    .casagridL p{
+        margin-left: 144px;
+        width: 50%;
+    }
+    .casagridL button{
+        margin-left: 144px;
+        border: 3px solid #7251B5;
+    }       
+    .casagridL button:hover{
+            transition-duration: 0.2s;
+            background-color:#7251B5;
+        }
+        .casagridL button:hover h2{
+            color: #ffffff;
+        }
+   
+    .casagridR{
+        display: grid; 
+        align-items: center;
+        justify-content: center;     
+    }
+        .casagridR img{
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+ /* NSANSANSANSANSANSANSANSANSANSANSANSANSANSA */
+
+ 
+
+.nsagridcontainer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: "nsaL nsaR";
+}
+#nsaL{
+grid-area: nsaL;
+background-color: #CFDFEF;
+}
+#nsaR{
+grid-area: nsaR;
+background-color: #F5F9FC;
+display: grid;
+}
+.nsagridL{
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+}
+    .nsagridL img{
+        max-width: 100%;
+        height: auto;
+    }
+.nsagridR h3{
+       margin-left: 144px;
+   }
+   .nsagridR h1{
+           margin-left: 144px;
+           color: #1E7BB7;
+       }
+       .nsagridR h2{
+       color: #1E7BB7;
+   }
+   .nsagridR p{
+       margin-left: 144px;
+       width: 50%;
+   }
+   .nsagridR button{
+       margin-left: 144px;
+       border: 3px solid #1E7BB7;
+   }       
+   .nsagridR button:hover{
+           transition-duration: 0.2s;
+           background-color:#1E7BB7;
+       }
+       .nsagridR button:hover h2{
+           color: #ffffff;
+       }
+ 
+
+
+/* ONLYPETSONLYPETSONLYPETSONLYPETSONLYPETSONLYPETS */
+.opgridcontainer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: "opL opR";    
+} 
+#opL{
+    grid-area: opL;
+    background-color: #FEFAF6;
+}
+#opR{
+    grid-area: opR;
+    background-color: #F8E2C8;
+}
+    .opgridL{
+    display: grid;
+    }
+    .opgridL h3{
+        margin-left: 144px;
+    }
+    .opgridL h1{
+            margin-left: 144px;
+            color: #F88A39;
+        }
+        .opgridL h2{
+        color: #F88A39;
+    }
+    .opgridL p{
+        margin-left: 144px;
+        width: 50%;
+    }
+    .opgridL button{
+        margin-left: 144px;
+        border: 3px solid #F88A39;
+    }       
+        .opgridL button:hover{
+                transition-duration: 0.2s;
+                background-color:#F88A39;
+            }
+            .opgridL button:hover h2{
+                color: #ffffff;
+            }
+.opgridR{
+    display: grid; 
+    align-items: center;
+    justify-content: center;     
+}
+    .opgridR img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* CONTACTCONTACT CONTACT CONTACT CONTACT CONTACT  */
+
+
+.contactcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FF6C99;
+        width: 30%;
+} 
+.sociallinks {
+    list-style: none;
+    display: inline-block;
+    } 
+
+
+ 
+
+
+  
    
  
  
  
-/*FOOTER*/
+/*FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER*/
+
 footer{
     position: relative;
     left: 0px;
@@ -429,23 +384,232 @@ footer{
     height: 116px;
     background: #FDECE9;
     }
-
-
-    
-
-.footerList {
-    margin-top: 15px;
-    margin-left:15px;
-    margin-right: 72px;
-    margin-bottom: 15px;
-    font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 175%;
+    .footerList {
+        margin-top: 15px;
+        margin-left:15px;
+        margin-right: 72px;
+        margin-bottom: 15px;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 175%;
+        }
+ 
+ @media screen and (max-width: 1274px) {
+    .casagridL h3{
+        font-size: 12px;
+        margin-left:72px;
     }
- 
- 
+    .casagridL h1{
+        font-size: 30px;
+        margin-left:72px;
+        }
+        .casagridL h2{
+            font-size: 18px;
+    }
+    .casagridL p{
+        font-size: 18px;
+        margin-left:72px;
+        width: 70%;
+    }
+    .casagridL button{
+        margin-left: 72px;
+    }    
+    .nsagridR h3{
+        font-size: 12px;
+        margin-left:72px;
+    }
+    .nsagridR h1{
+        font-size: 30px;
+        margin-left:72px;
+        }
+        .nsagridR h2{
+            font-size: 18px;
+    }
+    .nsagridR p{
+        font-size: 18px;
+        margin-left:72px;
+        width: 70%;
+    }
+    .nsagridR button{
+        margin-left: 72px;
+    }
+    .opgridL h3{
+        font-size: 12px;
+        margin-left:72px;
+    }
+    .opgridL h1{
+        font-size: 30px;
+        margin-left:72px;
+        }
+        .opgridL h2{
+            font-size: 18px;
+    }
+    .opgridL p{
+        font-size: 18px;
+        margin-left:72px;
+        width: 70%;
+    }
+    .opgridL button{
+        margin-left: 72px;
+    }        
+    #LANDleft p{
+        font-size: 30px;
+        margin-left:72px;
+    }
+    nav {
+        font-size: 20px;
+        }
+    button{
+        box-sizing: border-box;
+        align-items: center;
+        width: 200px;
+        height: 60px;   
+    }
+    .topnavList {
+        margin-right: 72px;} 
+    .logo {
+        margin-left: 72px;} 
+    .contactcontainer{
+        width: 50%;
+}   
+.contactcontainer h1{
+    font-size: 30px;
+}
+}
+@media screen and (max-width: 824px) {
+    #LANDleft p{
+        font-size: 20px;
+    }
+    .contactcontainer{
+        width: 80%;
+}
+}
+@media screen and (max-width: 660px) {
+    nav {
+        font-size: 16px;
+        }
+        .topnavList {
+            margin-right: 16px;} 
+        .logo {
+            margin-left: 16px;
+        height: auto;
+        } 
+    .casagridcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: "casatop"
+        "casabottom";     
+    } 
+    #casaL{
+        grid-area: casatop;
+        justify-content: center;
+    }
+    #casaR{
+        grid-area: casabottom;
+    }
+    .casagridL h3{
+        justify-content: center;
+    }
+    .casagridL h1{
+        font-size: 30px;
+        justify-content: center;
+        }
+        .casagridL h2{
+            font-size: 18px;
+    }
+    .casagridL p{
+        font-size: 18px;
+       justify-content: center;
+    }
+    .casagridL button{
+       justify-content: center;
+    }
+    
+     .nsagridcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: "nsatop"
+        "nsabottom";     
+    } 
+    #nsaL{
+        grid-area: nsabottom;
+        justify-content: center;
+    }
+    #nsaR{
+        grid-area: nsatop;
+    }
+    .nsagridL h3{
+        justify-content: center;
+    }
+    .nsagridL h1{
+        font-size: 30px;
+        justify-content: center;
+        }
+        .nsagridL h2{
+            font-size: 18px;
+    }
+    .nsagridL p{
+        font-size: 18px;
+       justify-content: center;
+    }
+    .nsagridL button{
+       justify-content: center;
+    }
+
+    .opgridcontainer{
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: "optop"
+        "opbottom";     
+    } 
+    #opL{
+        grid-area: optop;
+        
+        justify-content: center;
+    }
+    #opR{
+        grid-area: opbottom;
+    }
+    .opgridL h3{
+        font-size: 12px;
+        justify-content: center;
+    }
+    .opgridL h1{
+        font-size: 30px;
+        justify-content: center;
+        }
+        .opgridL h2{
+            font-size: 18px;
+    }
+    .opgridL p{
+        font-size: 18px;
+       justify-content: center;
+        /* width: 90%; */
+    }
+    .opgridL button{
+       /* align-items: center; */
+       justify-content: center;
+    }
+
+
+
+
+   
+
+
+}
+
+
+
+
  
 /* "ABOUT PAGE"*/
 .bigHello{
@@ -462,7 +626,6 @@ footer{
     font-style: normal;
 }
 .careerSlogan{
-
     left: 110px;
     margin-top: 72px;
     width: 500px;
